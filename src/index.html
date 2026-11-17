@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sehat Sentosa Medical Center</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================== NAVBAR ========================================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark brand-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Sehat Sentosa Medical Center</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDashboard" aria-controls="navbarDashboard" aria-expanded="false" aria-label="Buka menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarDashboard">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#dashboard">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#layanan">Layanan Medis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#form">Pendaftaran</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================== DASHBOARD / HEADER ========================================== -->
+  <main id="dashboard" class="container py-5">
+    <!-- Header -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
+      <div>
+        <span class="section-label">HOSPITAL PROFILE</span>
+        <h1 class="h2 fw-bold mb-1">Selamat Datang di Sehat Sentosa</h1>
+        <p class="text-secondary mb-0">Pusat pelayanan kesehatan terpadu dan terpercaya untuk Anda dan keluarga.</p>
+      </div>
+      <div class="profile-box">
+        <img src="https://static.vecteezy.com/system/resources/previews/041/642/170/non_2x/ai-generated-portrait-of-handsome-smiling-young-man-with-folded-arms-isolated-free-png.png" alt="Foto profil pasien/pengguna">
+        <div>
+          <strong class="d-block">Saipul Bahri</strong>
+          <span class="text-secondary">Pasien Terdaftar</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alert -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Informasi:</strong> Layanan Medical Check Up khusus akhir pekan buka mulai pukul 08:00 - 14:00 WIB.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Tutup"></button>
+    </div>
+
+    <!-- ========================================== STATISTIC CARD ========================================== -->
+    <section class="row g-3 mb-5">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card dashboard-card h-100">
+          <div class="card-body">
+            <p class="text-secondary mb-1">Total Kunjungan</p>
+            <h2 class="display-6 fw-bold">4</h2>
+            <span class="badge text-bg-success">Selesai</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card dashboard-card h-100">
+          <div class="card-body">
+            <p class="text-secondary mb-1">Konsultasi Poli</p>
+            <h2 class="display-6 fw-bold">2</h2>
+            <span class="badge text-bg-primary">Terjadwal</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card dashboard-card h-100">
+          <div class="card-body">
+            <p class="text-secondary mb-1">Hasil Lab</p>
+            <h2 class="display-6 fw-bold">1</h2>
+            <span class="badge text-bg-info">Tersedia</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card dashboard-card h-100">
+          <div class="card-body">
+            <p class="text-secondary mb-1">Status Keanggotaan</p>
+            <h2 class="h3 fw-bold mt-2">VIP</h2>
+            <span class="badge text-bg-success">Aktif</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== 6 CARD LAYANAN MEDIS (GAMBAR + JUDUL + PENJELASAN) ========================================== -->
+    <section id="layanan" class="mb-5">
+      <div class="mb-4">
+        <span class="section-label">LAYANAN KESEHATAN</span>
+        <h2 class="h3 fw-bold">Fasilitas & Poli Unggulan</h2>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1: Poli Umum -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://puskesmasdobo.kepulauanarukab.go.id/wp-content/uploads/2023/09/icon-Poliklinik1.png" class="card-img-top" alt="Poli Umum">
+            <div class="card-body">
+              <span class="badge text-bg-primary mb-3">Layanan Utama</span>
+              <h3 class="h5">Poli Umum</h3>
+              <p class="text-secondary">Pelayanan kesehatan umum untuk pemeriksaan kesehatan harian dan penanganan keluhan medis dasar.</p>
+              <button class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#modalDetail">Detail Layanan</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Poli Gigi -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://puskesmasdobo.kepulauanarukab.go.id/wp-content/uploads/2023/09/poli-gigi1-1.png" class="card-img-top" alt="Poli Gigi">
+            <div class="card-body">
+              <span class="badge text-bg-success mb-3">Spesialis</span>
+              <h3 class="h5">Poli Gigi</h3>
+              <p class="text-secondary">Klinik atau pusat poli gigi dengan peralatan modern untuk perawatan dan kesehatan gigi menyeluruh.</p>
+              <button class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#modalDetail">Detail Layanan</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Laboratorium -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://static.vecteezy.com/system/resources/previews/059/338/817/non_2x/scientist-conducting-experiments-in-laboratory-with-glassware-and-chemicals-showcasing-focus-and-precision-free-photo.jpeg" class="card-img-top" alt="Laboratorium">
+            <div class="card-body">
+              <span class="badge text-bg-info mb-3">Diagnostik</span>
+              <h3 class="h5">Laboratorium</h3>
+              <p class="text-secondary">Layanan pemeriksaan laboratorium lengkap dan akurat untuk menunjang diagnosis dokter.</p>
+              <button class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#modalDetail">Detail Layanan</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Apotek -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://www.designboom.com/cms/images/user_submit/2012/03/bvd_apotekhjartat_1.jpg" class="card-img-top" alt="Apotek">
+            <div class="card-body">
+              <span class="badge text-bg-warning mb-3">Farmasi</span>
+              <h3 class="h5">Apotek</h3>
+              <p class="text-secondary">Layanan obat-obatan resmi, lengkap, serta konsultasi kefarmasian langsung bersama apoteker.</p>
+              <button class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#modalDetail">Detail Layanan</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Medical Check Up -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://media.gettyimages.com/id/1395662449/video/doctor-listening-to-patients-heartbeat.jpg?s=640x640&k=20&c=tQsPSylJ0-o8dDF-RFEnxduEQQf39CQ89OjWFOcgDhg=" class="card-img-top" alt="Medical Check Up">
+            <div class="card-body">
+              <span class="badge text-bg-danger mb-3">Preventif</span>
+              <h3 class="h5">Medical Check Up</h3>
+              <p class="text-secondary">Pemeriksaan kesehatan menyeluruh secara berkala untuk mendeteksi dini berbagai risiko penyakit.</p>
+              <button class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#modalDetail">Detail Layanan</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Unit Gawat Darurat (Bonus pelengkap grid) -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://media.istockphoto.com/id/1774540782/photo/ugd-unit-gawat-darurat-or-igd-instalasi-gawat-darurat-or-hospital-emergency-installation.jpg?s=612x612&w=0&k=20&c=wqoO2U9HMGe8_3j6qMNf5fws-4gnGA0tx7G6v4pgm0M=" class="card-img-top" alt="UGD 24 Jam">
+            <div class="card-body">
+              <span class="badge text-bg-dark mb-3">24 Jam</span>
+              <h3 class="h5">UGD & Darurat</h3>
+              <p class="text-secondary">Layanan gawat darurat siaga 24 jam dengan tim medis profesional dan ambulans cepat tanggap.</p>
+              <button class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#modalDetail">Detail Layanan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== FORM PENDAFTARAN / JANJI TEMU ========================================== -->
+    <section id="form" class="registration-section">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <div class="card border-0 shadow">
+            <div class="card-body p-4 p-md-5">
+              <span class="section-label">APPOINTMENT</span>
+              <h2 class="h3 fw-bold">Pendaftaran Janji Temu</h2>
+              <p class="text-secondary">Lengkapi form berikut untuk membuat jadwal konsultasi. Field bertanda * wajib diisi.</p>
+              
+              <form>
+                <!-- Nama -->
+                <div class="mb-3">
+                  <label for="nama" class="form-label">Nama Lengkap Pasien *</label>
+                  <input type="text" class="form-control" id="nama" name="nama" required>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email *</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="nama@email.com" required>
+                </div>
+
+                <!-- Select Poli/Layanan -->
+                <div class="mb-3">
+                  <label for="jenis" class="form-label">Pilih Layanan / Poli *</label>
+                  <select class="form-select" id="jenis" name="jenis" required>
+                    <option value="">-- Pilih Layanan Medis --</option>
+                    <option>Poli Umum</option>
+                    <option>Poli Gigi</option>
+                    <option>Laboratorium</option>
+                    <option>Apotek</option>
+                    <option>Medical Check Up</option>
+                  </select>
+                </div>
+
+                <!-- Radio -->
+                <fieldset class="mb-3">
+                  <legend class="form-label">Jenis Pembayaran / Penjamin *</legend>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="kehadiran" id="umum" value="umum" required>
+                    <label class="form-check-label" for="umum">Mandiri / Umum</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="kehadiran" id="bpjs" value="bpjs">
+                    <label class="form-check-label" for="bpjs">BPJS Kesehatan / Asuransi</label>
+                  </div>
+                </fieldset>
+
+                <!-- Textarea -->
+                <div class="mb-3">
+                  <label for="alasan" class="form-label">Keluhan / Catatan Tambahan</label>
+                  <textarea class="form-control" id="alasan" name="alasan" rows="4" maxlength="300"></textarea>
+                </div>
+
+                <!-- Checkbox -->
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" id="setuju" required>
+                  <label class="form-check-label" for="setuju">Saya menyatakan data kesehatan yang diisi sudah benar.</label>
+                </div>
+
+                <!-- Button modal konfirmasi -->
+                <button type="button" class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#modalKonfirmasi">
+                  Kirim Pendaftaran
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================== MODAL DETAIL ========================================== -->
+  <div class="modal fade" id="modalDetail" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5">Informasi Layanan Medis</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+        </div>
+        <div class="modal-body">
+          <p>Informasi detail jam operasional, jadwal dokter spesialis, serta prosedur pelayanan terkait akan ditampilkan di sini.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== MODAL KONFIRMASI ========================================== -->
+  <div class="modal fade" id="modalKonfirmasi" tabindex="-1" aria-labelledby="judulKonfirmasi" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="judulKonfirmasi">Konfirmasi Janji Temu</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+        </div>
+        <div class="modal-body">
+          Apakah Anda yakin data pendaftaran layanan kesehatan yang dimasukkan sudah benar?
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Periksa Kembali</button>
+          <button class="btn btn-brand">Ya, Kirim</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== FOOTER ========================================== -->
+  <footer class="brand-footer py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2026 Sehat Sentosa Medical Center. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

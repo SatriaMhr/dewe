@@ -1,0 +1,134 @@
+/* ==========================================
+   CUSTOM THEME (Medical Center)
+========================================== */
+:root {
+    --brand-primary: #2a394e;
+    /* Biru Medis Utama */
+    --brand-primary-dark: #0a58ca;
+    /* Biru Tua */
+    --brand-accent: #198754;
+    /* Hijau Medis */
+    --brand-background: #f8f9fa;
+    /* Latar Belakang Bersih */
+    --brand-surface: #ffffff;
+    --brand-text: #212529;
+    --brand-muted: #6c757d;
+    --brand-radius: 12px;
+}
+
+/* ==========================================
+   GLOBAL
+========================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--brand-background);
+    color: var(--brand-text);
+    line-height: 1.6;
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+.brand-navbar {
+    background-color: var(--brand-primary);
+}
+
+/* ==========================================
+   LABEL
+========================================== */
+.section-label {
+    display: block;
+    color: var(--brand-primary);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    margin-bottom: 7px;
+}
+
+/* ==========================================
+   PROFILE
+========================================== */
+.profile-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile-box img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* ==========================================
+   DASHBOARD CARD & SERVICE CARDS
+========================================== */
+.dashboard-card {
+    border: 0;
+    border-radius: var(--brand-radius);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+/* ==========================================
+   CUSTOM BUTTON
+========================================== */
+.btn-brand {
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+    color: white;
+}
+
+.btn-brand:hover {
+    background-color: var(--brand-primary-dark);
+    border-color: var(--brand-primary-dark);
+    color: white;
+}
+
+/* ==========================================
+   FORM
+========================================== */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+.brand-footer {
+    background-color: #1a1d20;
+    color: white;
+}
+
+/* ==========================================
+   RESPONSIVE PADDING
+========================================== */
+.registration-section {
+    padding: 30px 0;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .registration-section {
+        padding: 50px 0;
+    }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .registration-section {
+        padding: 70px 0;
+    }
+}
